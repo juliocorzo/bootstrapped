@@ -1,0 +1,9 @@
+// Giving Bootstrap Properties to Kramdown-generated HTML
+
+table {
+  @extend .table;
+}
+
+h3 {
+  @extend .mt-4;
+}

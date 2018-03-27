@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div id="home-frontmatter">
+  <div class="container">
+    {% if page.title %}
+      <h1 id="home-title"><img id="home-icon" src="/assets/icons/3d.svg" alt="" style="filter: grayscale(100%);">{{ page.title }}</h1>
+    {% endif %}
+    {% if page.description %}
+      <p id="home-description">{{ page.description }}</p>
+    {% endif %}
+  </div>
+</div>
+
+<div id="home-content" class="container">
+
+  {{ content }}
+
+</div>

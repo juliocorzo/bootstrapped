@@ -1,0 +1,29 @@
+# Vera 2.0
+
+# Basic Configuration
+source: ./_source
+destination: ./_built
+
+# Collections
+collections_dir: my_collections
+collections:
+  college:
+    output: true
+    permalink: /:collection/:path
+  personal:
+    output: true
+    permalink: /:collection/:path
+  experiments:
+    output: true
+    permalink: /:collection/:path
+  documentation:
+    output: true
+    permalink: /:collection/:path
+
+# SASS / Bootstrap / CSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+markdown: KramdownPygments
+highlighter: rouge

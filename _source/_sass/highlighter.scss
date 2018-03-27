@@ -1,0 +1,103 @@
+/*    Highlighting & Code
+--------------------------------------------------------------------------------- */
+pre {
+  padding: 1rem 1rem 1rem 2rem;
+  overflow: auto;
+  line-height: 1.45;
+  background-color: darken($gray-100, 3%);
+  border-radius: 0.3rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+code {
+  padding: 3px 5px;
+  font-family: 'Source Code Pro', monospace;
+  background-color: darken($gray-100, 3%);
+  border-radius: 0.2rem;
+}
+pre code {
+  padding: 0;
+  background-color: darken($gray-100, 3%);
+}
+.highlight table td { padding: 5px; }.highlight table pre { margin: 0; }
+$codeRed: #E65F5C;
+$codeWhite: #FFFFFF;
+$codeLightGrey: darken(#929292,10%);
+$codeDarkGrey: darken(#545454,5%);
+$codePurple: #9D5AC9;
+$codeOrange: #F5871F;
+$codeGreen: #60AD40;
+$codeCyan: #44A8AF;
+$codeBlue: #3988EF;
+$codeDarkBlue: #255BA3;
+
+$code-font-size:  0.9rem;
+$code-color:      $codeDarkGrey;
+$kbd-bg:          darken($gray-100, 3%);
+
+div pre code { color: $codeDarkGrey; }
+
+.highlight .hll { background-color: #EFEFEF }
+.highlight .c { color: $codeLightGrey }
+.highlight .err { background: $codeRed; color: $codeWhite; }
+.highlight .k { color: $codePurple }
+.highlight .l { color: $codeOrange }
+.highlight .n { color: $codeLightGrey }
+.highlight .o { color: $codeDarkGrey; }
+.highlight .p { color: $codeLightGrey }
+.highlight .cm { color: $codeLightGrey }
+.highlight .cp { color: $codeLightGrey }
+.highlight .c1 { color: $codeLightGrey }
+.highlight .cs { color: $codeLightGrey }
+.highlight .gd { color: $codeRed }
+.highlight .ge { font-style: italic }
+.highlight .gh { color: $codeDarkGrey; font-weight: bold }
+.highlight .gi { color: $codeGreen; }
+.highlight .gp { color: $codeGreen; font-weight: bold }
+.highlight .gs { font-weight: bold }
+.highlight .gu { color: $codeCyan; font-weight: bold }
+.highlight .kc { color: $codePurple }
+.highlight .kd { color: $codePurple }
+.highlight .kn { color: $codeCyan }
+.highlight .kp { color: $codeBlue }
+.highlight .kr { color: $codePurple }
+.highlight .kt { color: $codeDarkBlue }
+.highlight .ld { color: $codeGreen; }
+.highlight .m { color: $codeOrange }
+.highlight .s { color: $codeGreen; }
+.highlight .na { color: $codeBlue }
+.highlight .nb { color: $codeBlue }
+.highlight .nc { color: $codeDarkBlue }
+.highlight .no { color: $codeDarkBlue }
+.highlight .nd { color: $codeCyan }
+.highlight .ni { color: $codeDarkGrey; }
+.highlight .ne { color: $codeRed }
+.highlight .nf { color: $codeBlue }
+.highlight .nl { color: $codeDarkGrey; }
+.highlight .nn { color: $codeDarkBlue }
+.highlight .nx { color: $codeBlue }
+.highlight .py { color: $codeDarkGrey; }
+.highlight .nt { color: $codeCyan }
+.highlight .nv { color: $codeRed }
+.highlight .ow { color: $codeCyan }
+.highlight .w { color: $codeDarkGrey; }
+.highlight .mf { color: $codeOrange }
+.highlight .mh { color: $codeOrange }
+.highlight .mi { color: $codeOrange }
+.highlight .mo { color: $codeOrange }
+.highlight .sb { color: $codeGreen; }
+.highlight .sc { color: $codeDarkGrey; }
+.highlight .sd { color: $codeLightGrey }
+.highlight .s2 { color: $codeGreen; }
+.highlight .se { color: $codeOrange }
+.highlight .sh { color: $codeGreen; }
+.highlight .si { color: $codeOrange }
+.highlight .sx { color: $codeGreen; }
+.highlight .sr { color: $codeGreen; }
+.highlight .s1 { color: $codeGreen; }
+.highlight .ss { color: $codeGreen; }
+.highlight .bp { color: $codeDarkGrey; }
+.highlight .vc { color: $codeRed }
+.highlight .vg { color: $codeRed }
+.highlight .vi { color: $codeRed }
+.highlight .il { color: $codeOrange }

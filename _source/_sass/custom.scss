@@ -1,0 +1,249 @@
+/*
+      Vera (https://www.github.com/juliocorzo)
+      juliocorzo.com
+
+--------------------------------------------------------------------------------- */
+
+
+
+
+
+//    Bootstrap overrides
+// -----------------------------------------------------------------------------
+
+$white:           #FFFFFF;
+$gray-100:        #E8E9EA;
+$gray-200:        #909090;
+$gray-300:        #808080;
+$gray-400:        #707070;
+$gray-500:        #606060;
+$gray-600:        #505050;
+$gray-700:        #404040;
+$gray-800:        #303030;
+$gray-900:        #202020;
+$black:           #101010;
+
+$blue:            #3988EF;
+$indigo:          #9D5AC9;
+$purple:          #6F42C1;
+$pink:            #e83e8c;
+$red:             #E65F5C;
+$orange:          #F5871F;
+$yellow:          #ffc107;
+$green:           #60AD40;
+$teal:            #20c997;
+$cyan:            #44A8AF;
+
+//    Bootstrap Color Map
+// -----------------------------------------------------------------------------
+
+$transparent:     rgba($gray-300, 0.3);
+$light:           $gray-100;
+$dark:            $gray-900;
+$primary:         #ffffff;
+$secondary:       #ffffff;
+$success:         #60AD40;
+$info:            $teal !default;
+$warning:         $yellow !default;
+$danger:          $red;
+
+$links:           lighten(#ffffff, 20%);
+
+$theme-colors: (
+  "white": $white,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+  "black": $black,
+  "transparent": $transparent,
+  "light": $gray-100,
+  "dark": $gray-900,
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "primary": #ffffff,
+  "secondary": #ffffff,
+  "success": $green,
+  "info": $blue,
+  "warning": $yellow,
+  "danger": $red
+);
+
+// Links
+// -----------------------------------------------------------------------------
+$link-color:              darken($blue, 12%);
+$link-hover-color:        darken($blue, 12%);
+$link-hover-decoration:   underline;
+
+// Cards
+// -----------------------------------------------------------------------------
+$card-bg:                 lighten($gray-100, 3%);
+
+// Navbar
+// -----------------------------------------------------------------------------
+$dropdown-bg:                 lighten($gray-100, 3%);
+$dropdown-link-color:         $dark;
+$dropdown-link-hover-color:   $dark;
+$dropdown-link-hover-bg:      $gray-100;
+$dropdown-link-active-color:  $dark;
+$dropdown-link-active-bg:     darken($gray-100, 6%);
+
+
+/* Icons
+-------------------------------------------------------------------------------- */
+.link-icon-invert { -webkit-filter: invert(65%); filter: invert(65%); }
+.link-icon-invert:hover { -webkit-filter: invert(95%); filter: invert(95%); }
+.icon-invert { -webkit-filter: invert(65%); filter: invert(65%); }
+
+/* Footer
+-------------------------------------------------------------------------------- */
+html { position: relative; min-height: 100%; }
+body { margin-bottom: 60px; }
+.footer { position: absolute; bottom: 0; width: 100%; height: 60px;
+  line-height: 60px; background-color: $gray-100; color: $dark }
+
+/* Spacing
+-------------------------------------------------------------------------------- */
+.container-readable {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width: 292px) {
+    .container-readable {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 384px) {
+    .container-readable {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container-readable {
+        max-width: 540px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-readable {
+        max-width: 720px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-readable {
+        max-width: 960px;
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-readable {
+        max-width: 1140px;
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+}
+
+h1 { margin: 0.10em 0; font-size: 2.5rem; }
+h2 { margin-top: 5rem; }
+
+.mt-6 {  margin-top: 3rem; }
+.mt-8 {  margin-top: 4rem; }
+.mt-10 { margin-top: 5rem; }
+.mt-12 { margin-top: 6rem; }
+.mt-14 { margin-top: 7rem; }
+.mt-16 { margin-top: 8rem; }
+.mb-7 {  margin-bottom: 3.5rem; }
+
+blockquote {
+  padding: 0 1rem;
+  margin-left: 0;
+  color: lighten($dark, 7%);
+  border-left: 0.3rem solid lighten(black, 60%); }
+
+/* Tables
+-------------------------------------------------------------------------------- */
+
+
+.table td, .table th { padding: .75rem; vertical-align: top; border-top: none; }
+.table thead th { vertical-align: bottom;
+  border-bottom: 2px solid $secondary; background-color: $light;
+  border-top: none; }
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th { background-color: $light;
+  border-top: none; }
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+  background-color: darken($light, 3%); border-top: none; }
+
+  $table-head-bg:               $gray-200 !default;
+  $table-head-color:            $gray-700 !default;
+
+/* Images
+--------------------------------------------------------------------
+p img {
+  float: left;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.3rem;
+  max-width: 35%;
+}
+
+/* Badges
+-------------------------------------------------------------------- */
+.badge-tags {
+  background-color: lighten(black, 80%);
+  color: lighten($dark, 10%);
+}
+
+/* Backdrop Filter SAFARI ONLY!
+-------------------------------------------------------------------------------- */
+.bdf-5 {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Modals
+-------------------------------------------------------------------------------- */
+$modal-header-border-color:   $gray-100;
+
+/* Coverphoto
+-------------------------------------------------------------------------------- */
+#coverphoto {
+  background-attachment: fixed;
+  background-image: url(/assets/images/coverphoto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.card-img-top {
+
+}
