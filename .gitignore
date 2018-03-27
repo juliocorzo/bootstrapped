@@ -2,6 +2,7 @@ _built/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+.gitignore
 
 
 # Compiled source #
