@@ -1,4 +1,4 @@
-
+![bootstrapped](bootstrapped-logo.png)
 
 ### About
 This (WIP) Jekyll theme aims to integrate the robust styling of bootstrap to Jekyll, allowing users to customize the overall feel of their website using bootstrap directly. It includes the entire CSS portion of bootstrap in SCSS format, which is automatically transformed into CSS by Jekyll.
