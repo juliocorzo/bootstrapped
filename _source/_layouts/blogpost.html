@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div>
+  <div id="blogpost-frontmatter" class="container-readable">
+    {% if page.title %}
+      <h3 id="blogpost-title">{{ page.title }}</h3>
+    {% endif %}
+    {% if page.description %}
+      <p id="blogpost-description">{{ page.description }}</p>
+    {% endif %}
+    {% if page.date %}
+      <p>{{ page.date | date: "%B %-d, %Y" }}</p>
+    {% endif %}
+  </div>
+</div>
+
+<div id="blogpost-content" class="container-readable">
+
+{{ content }}
+
+</div>

@@ -38,8 +38,8 @@ $home-frontmatter-secondary: #3988EF;
 
 //  Articles
 
-$article-frontmatter-primary:   #3A6EB2;
-$article-frontmatter-secondary: #2878E0;
+$article-frontmatter-primary:   #113E77;
+$article-frontmatter-secondary: #3988EF;
 
 #article-frontmatter {
   @extend .pt-4;
@@ -59,4 +59,23 @@ $article-frontmatter-secondary: #2878E0;
 
 #article-content {
   @extend .mt-5;
+}
+
+//  Blogpost
+
+#blogpost-frontmatter {
+  @extend .pt-4;
+}
+
+#blogpost-title {
+  @extend .mb-2;
+  @extend .mt-2;
+}
+
+#blogpost-description {
+  @extend .mt-0;
+}
+
+#blogpost-content {
+  @extend .mt-3;
 }

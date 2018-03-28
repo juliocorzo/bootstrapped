@@ -113,7 +113,7 @@ $dropdown-link-active-bg:     darken($gray-100, 6%);
 html { position: relative; min-height: 100%; }
 body { margin-bottom: 60px; }
 .footer { position: relative; bottom: 0; width: 100%; min-height: 60px;
-   background-color: $gray-200; color: $dark }
+   background-color: $gray-400; color: $white; }
 
 /* Spacing
 -------------------------------------------------------------------------------- */
@@ -132,7 +132,6 @@ body { margin-bottom: 60px; }
 
 @media (min-width: 384px) {
     .container-readable {
-        max-width: 340px;
         padding-right: 15px;
         padding-left: 15px;
     }
