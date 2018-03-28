@@ -4,7 +4,7 @@ title: Spacing Test
 description: Making sure that Bootstrap plays well with Jekyll
 ---
 
-# Header 1
+# Header 1 
 Lorem ipsum dolor sit amet, te ferri regione quo, facete euismod euripidis qui et, per erant partiendo quaerendum an. Duo erant clita iudicabit ea, accusam sententiae ius ea. Iisque electram vim in. Minim salutatus in vel, ne mea labore lucilius. Vim at propriae copiosae, per ad meis molestiae, et molestie posidonium nam. sigh
 
 {% highlight scss %}

@@ -2,6 +2,7 @@
 
 //  Home
 
+// These variables change the color for the gradient header
 $home-frontmatter-primary:   #113E77;
 $home-frontmatter-secondary: #3988EF;
 
@@ -10,7 +11,6 @@ $home-frontmatter-secondary: #3988EF;
   padding-bottom: 8rem;
   text-align: center;
   color: $white;
-  background-color: $gray-800;
   background-image: linear-gradient(120deg, $home-frontmatter-primary, $home-frontmatter-secondary);
 }
 
@@ -33,30 +33,30 @@ $home-frontmatter-secondary: #3988EF;
 }
 
 #home-content {
-  @extend .mt-4;
+  margin-top: 2rem;
 }
 
 //  Articles
 
-$article-frontmatter-primary:   #CB5307;
-$article-frontmatter-secondary: #FF9430;
+$article-frontmatter-primary:   #3A6EB2;
+$article-frontmatter-secondary: #2878E0;
 
 #article-frontmatter {
-  @extend .pt-5;
-  @extend .pb-5;
+  @extend .pt-4;
+  @extend .pb-4;
   color: $white;
-  background-color: $gray-800;
   background-image: linear-gradient(120deg, $article-frontmatter-primary, $article-frontmatter-secondary);
 }
 
 #article-title {
-  @extend .mb-1;
+  @extend .mb-2;
+  @extend .mt-2;
 }
 
 #article-description {
-  font-style: italic;
+  @extend .mt-0;
 }
 
 #article-content {
-  @extend .mt-4;
+  @extend .mt-5;
 }

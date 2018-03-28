@@ -1,21 +1,22 @@
 ---
 layout: article
 title: Installing
+description: Installing Jekyll and setting up the website
 ---
 
-### Requirements
+#### Requirements
 This theme, like the rest of Jekyll, is compatible with GNU/Linux, Unix, or macOS.
 It also requires Ruby, RubyGems, and Python 3. For a detailed guide on how to install
 all of these, please refer to [Jekyll's documentation.](https://jekyllrb.com/docs/installation/)
 After installing all of these, open Terminal and do:
 
 {% highlight shell %}
-gem install jekyll
+gem install jekyll 
 {% endhighlight %}
 
 You can now build and run Jekyll websites.
 
-### Running
+#### Running
 Clone this project's source code, navigate to the download folder, and run Jekyll to build the site.
 To view the website that was generated, also do jekyll serve.
 

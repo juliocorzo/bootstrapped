@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: article
+title: Style
 ---
 
 <script>
@@ -13,9 +14,8 @@ $(document).ready(function() {
 
 ## Styling Test
 
-### Tables
+### A sample table
 
-{: #example .display}
 | Tables        | Are           | Cool  |
 | ------------- | ------------- | ----- |
 | col 3 is      | right-aligned | $1600 |
