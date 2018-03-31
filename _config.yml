@@ -1,5 +1,10 @@
 # bootstrapped
 
+# Website
+name:        bootstrapped
+description: Customizable Jekyll theme featuring Bootstrap 4
+logo:        /assets/icons/logo.svg
+
 # Basic Configuration
 source: ./_source
 destination: ./_built

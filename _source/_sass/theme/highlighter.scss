@@ -22,8 +22,8 @@ pre code {
 .highlight table td { padding: 5px; }.highlight table pre { margin: 0; }
 $codeRed: #E65F5C;
 $codeWhite: #FFFFFF;
-$codeLightGrey: darken(#929292,10%);
-$codeDarkGrey: darken(#545454,5%);
+$codeLightGrey: darken(#929292,5%);
+$codeDarkGrey: darken(#545454,1%);
 $codePurple: #9D5AC9;
 $codeOrange: #F5871F;
 $codeGreen: #60AD40;
@@ -42,8 +42,8 @@ div pre code { color: $codeDarkGrey; }
 .highlight .err { background: $codeRed; color: $codeWhite; }
 .highlight .k { color: $codePurple }
 .highlight .l { color: $codeOrange }
-.highlight .n { color: $codeLightGrey }
-.highlight .o { color: $codeDarkGrey; }
+.highlight .n { color: $codeDarkGrey }
+.highlight .o { color: darken($codeLightGrey, 8%); }
 .highlight .p { color: $codeLightGrey }
 .highlight .cm { color: $codeLightGrey }
 .highlight .cp { color: $codeLightGrey }

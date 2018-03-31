@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div id="documentation" class="row mr-0">
+    <div id="documentation-sidebar" class="col-sm-2">
+      {% for documentation in site.documentation %}
+        <a href="{{ documentation.url }}" class="text-light">{{ documentation.title }}</a><br>
+      {% endfor %}
+    </div>
+    <div id="documentation-content" class="container-fluid col-sm-9 ml-5">
+      <h2 class="mt-0">{{ page.title }}</h2>
+      {% if page.description %}
+        <p id="article-description">{{ page.description }}</p>
+      {% endif %}
+
+      {{ content }}
+
+    </div>
+</div>

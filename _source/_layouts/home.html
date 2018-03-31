@@ -4,16 +4,14 @@ layout: default
 
 <div id="home-frontmatter">
   <div class="container-fluid">
-    {% if page.title %}
-      <h1 id="home-title"><img id="home-icon" src="/assets/icons/3d.svg" alt="" style="filter: grayscale(100%);">{{ page.title }}</h1>
-    {% endif %}
-    {% if page.description %}
-      <p id="home-description">{{ page.description }}</p>
+    <h1 id="home-title"><img id="home-icon" src="{{ site.logo }}" alt="">{{ site.name }}</h1>
+    {% if site.description %}
+      <p id="home-description">{{ site.description }}</p>
     {% endif %}
   </div>
 </div>
 
-<div id="home-content" class="container">
+<div id="home-content" class="container main">
 
   {{ content }}
 

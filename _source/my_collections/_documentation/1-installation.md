@@ -1,11 +1,13 @@
 ---
-layout: article
-title: Installing
+layout: documentation
+title: Installation
 ---
 
-#### Requirements
+<a class="btn btn-secondary" href="#">Just testing out a button</a>
+
+
 This theme, like the rest of Jekyll, is compatible with GNU/Linux, Unix, or macOS.
-It also requires Ruby, RubyGems, and Python 3. For a detailed guide on how to install
+It requires Ruby, RubyGems, and Python 3. For a detailed guide on how to install
 all of these, please refer to [Jekyll's documentation.](https://jekyllrb.com/docs/installation/)
 After installing all of these, open Terminal and do:
 

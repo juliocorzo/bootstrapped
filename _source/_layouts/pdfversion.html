@@ -1,0 +1,24 @@
+{% include head.html %}
+
+<body>
+
+  <div id="pdf-frontmatter">
+    <div class="container-fluid">
+      {% if page.title %}
+        <h3 id="pdf-title">{{ page.title }}</h3>
+      {% endif %}
+      {% if page.description %}
+        <p id="pdf-description">{{ page.description }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    {{ content }}
+
+  </div>
+
+</body>
+
+</html>

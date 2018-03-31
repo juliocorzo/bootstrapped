@@ -1,8 +1,8 @@
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container">
+  <nav class="navbar navbar-expand-md navbar-dark bg-navbar">
+    <div class="container-fluid">
       <a class="navbar-brand" href="/">
-        <img src="/assets/icons/3d.svg" width="30" height="25" class="d-inline-block align-middle mr-1" alt="" style="filter: grayscale(100%);"> bootstrapped</a>
+        <img src="{{ site.logo }}" width="30" height="25" class="d-inline-block align-middle mr-1" alt="" style="filter: grayscale(100%);"> {{ site.name }}</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -12,7 +12,9 @@
               Documentation
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/documentation/installing.html">Installing</a>
+              {% for documentation in site.documentation %}
+              <a class="dropdown-item" href="{{ documentation.url }}">{{ documentation.title }}</a>
+              {% endfor %}
             </div>
           </li>
         </ul>

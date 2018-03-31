@@ -1,0 +1,23 @@
+@function dynamic-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return darken($color, 80%);
+  } @else {
+    @return #ffffff;
+  }
+}
+
+@function contrast-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return darken($color, 90%);
+  }
+  @else {
+    @return darken($color, 33%);
+  }
+}
+
+// Sets the specified color to the specified brightness
+@function set-lightness($color, $brightness) {
+  $light: lightness($color);
+  $no-light: darken($color, $light);
+  @return lighten($no-light, $brightness);
+}
