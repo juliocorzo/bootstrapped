@@ -3,16 +3,13 @@ layout: documentation
 title: Installation
 ---
 
-<a class="btn btn-secondary" href="#">Just testing out a button</a>
-
-
 This theme, like the rest of Jekyll, is compatible with GNU/Linux, Unix, or macOS.
 It requires Ruby, RubyGems, and Python 3. For a detailed guide on how to install
 all of these, please refer to [Jekyll's documentation.](https://jekyllrb.com/docs/installation/)
 After installing all of these, open Terminal and do:
 
 {% highlight shell %}
-gem install jekyll  
+gem install jekyll   
 {% endhighlight %}
 
 You can now build and run Jekyll websites.
@@ -28,3 +25,5 @@ jekyll serve --incremental
 {% endhighlight %}
 
 If you did `jekyll serve`, the website will now be viewable on `http://127.0.0.1:4000/`.
+
+<a class="btn btn-secondary mt-4" href="#">GitHub Repository</a>

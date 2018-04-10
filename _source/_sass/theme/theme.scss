@@ -1,10 +1,10 @@
 //  Theme Styling
 
-$primary:         set-lightness($primary, 50);
+$primary:         $primary;
 $secondary:       set-lightness($secondary, 50);
 
-$navbar:          set-lightness($primary, 23);
-$links:           set-lightness($secondary, 55);
+$navbar:          set-lightness($primary, 15);
+$links:           set-lightness($primary, 50);
 
 .main h1, h2, h3, h4, h5, h6 {
   color: contrast-text-color($primary) !important;
@@ -15,13 +15,13 @@ $links:           set-lightness($secondary, 55);
 
 // These variables change the color for the gradient header
 $home-frontmatter-primary:   darken($primary, 15%);
-$home-frontmatter-secondary: darken($primary, 7%);
+$home-frontmatter-secondary: lighten($primary, 1%);
 
 #home-frontmatter {
   padding-top: 8rem;
   padding-bottom: 8rem;
   text-align: center;
-  color: dynamic-text-color($home-frontmatter-primary) !important;
+  color: dynamic-text-color($primary) !important;
   background-image: linear-gradient(120deg, $home-frontmatter-primary, $home-frontmatter-secondary);
 }
 
@@ -36,7 +36,6 @@ $home-frontmatter-secondary: darken($primary, 7%);
   @extend .mr-3;
   width: 75px;
   height: 75px;
-  filter: grayscale(100%);
 }
 
 #home-description {
@@ -49,7 +48,7 @@ $home-frontmatter-secondary: darken($primary, 7%);
 //  Articles
 
 $article-frontmatter-primary:   $primary;
-$article-frontmatter-secondary: lighten($primary, 10%);
+$article-frontmatter-secondary: lighten($primary, 5%);
 
 #article-frontmatter {
   @extend .pt-4;

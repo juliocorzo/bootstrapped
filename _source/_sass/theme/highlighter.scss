@@ -5,7 +5,8 @@ pre {
   overflow: auto;
   line-height: 1.45;
   background-color: darken($gray-100, 3%);
-  border-radius: 0.3rem;
+  border: none !important;
+  // border-radius: 0.3rem;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
@@ -22,8 +23,8 @@ pre code {
 .highlight table td { padding: 5px; }.highlight table pre { margin: 0; }
 $codeRed: #E65F5C;
 $codeWhite: #FFFFFF;
-$codeLightGrey: darken(#929292,5%);
-$codeDarkGrey: darken(#545454,1%);
+$codeLightGrey: darken(#545454,1%); // darken(#929292,5%);
+$codeDarkGrey:  black; // darken(#545454,1%);
 $codePurple: #9D5AC9;
 $codeOrange: #F5871F;
 $codeGreen: #60AD40;

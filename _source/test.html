@@ -1,0 +1,89 @@
+---
+layout: article
+title: Testing custom tags
+---
+
+<h4>Bootstrap Colors</h4>
+<p>This theme is equipped with several colors with which to give style to various Bootstrap components. These colors can be adjusted in <code>/_source/_sass/colors.scss/</code></p>
+
+<div class="row rounded">
+  <div class="col-sm-4">
+    <div class="bg-white" style="height: 32px"><p class="text-center pt-1">White</p></div>
+    <div class="bg-gray-100" style="height: 32px"><p class="text-center pt-1">Gray-100</p></div>
+    <div class="bg-gray-200" style="height: 32px"><p class="text-white text-center pt-1">Gray-200</p></div>
+    <div class="bg-gray-300" style="height: 32px"><p class="text-white text-center pt-1">Gray-300</p></div>
+    <div class="bg-gray-400" style="height: 32px"><p class="text-white text-center pt-1">Gray-400</p></div>
+    <div class="bg-gray-500" style="height: 32px"><p class="text-white text-center pt-1">Gray-500</p></div>
+    <div class="bg-gray-600" style="height: 32px"><p class="text-white text-center pt-1">Gray-600</p></div>
+    <div class="bg-gray-700" style="height: 32px"><p class="text-white text-center pt-1">Gray-700</p></div>
+    <div class="bg-gray-800" style="height: 32px"><p class="text-white text-center pt-1">Gray-800</p></div>
+    <div class="bg-gray-900" style="height: 32px"><p class="text-white text-center pt-1">Gray-900</p></div>
+    <div class="bg-black" style="height: 32px"><p class="text-white text-center pt-1">Black</p></div>
+  </div>
+  <div class="col-sm-4">
+    <div class="bg-red" style="height: 32px"><p class="text-white text-center pt-1">Red</p></div>
+    <div class="bg-orange" style="height: 32px"><p class="text-white text-center pt-1">Orange</p></div>
+    <div class="bg-yellow" style="height: 32px"><p class="text-white text-center pt-1">Yellow</p></div>
+    <div class="bg-green" style="height: 32px"><p class="text-white text-center pt-1">Green</p></div>
+    <div class="bg-teal" style="height: 32px"><p class="text-white text-center pt-1">Teal</p></div>
+    <div class="bg-cyan" style="height: 32px"><p class="text-white text-center pt-1">Cyan</p></div>
+    <div class="bg-blue" style="height: 32px"><p class="text-white text-center pt-1">Blue</p></div>
+    <div class="bg-purple" style="height: 32px"><p class="text-white text-center pt-1">Purple</p></div>
+    <div class="bg-indigo" style="height: 32px"><p class="text-white text-center pt-1">Indigo</p></div>
+    <div class="bg-pink" style="height: 32px"><p class="text-white text-center pt-1">Pink</p></div>
+  </div>
+  <div class="col-sm-4">
+    <div class="bg-primary" style="height: 32px"><p class="text-light text-center pt-1">Primary</p></div>
+    <div class="bg-secondary" style="height: 32px"><p class="text-light text-center pt-1">Secondary</p></div>
+    <div class="bg-transparent" style="height: 32px"><p class="text-center pt-1">Transparent</p></div>
+    <div class="bg-light" style="height: 32px"><p class="text-center pt-1">Light</p></div>
+    <div class="bg-dark" style="height: 32px"><p class="text-light text-center pt-1">Dark</p></div>
+    <div class="bg-success" style="height: 32px"><p class="text-light text-center pt-1">Success</p></div>
+    <div class="bg-warning" style="height: 32px"><p class="text-light text-center pt-1">Warning</p></div>
+    <div class="bg-danger" style="height: 32px"><p class="text-light text-center pt-1">Danger</p></div>
+    <div class="bg-info" style="height: 32px"><p class="text-light text-center pt-1">Info</p></div>
+  </div>
+  <!--
+  <div class="col-sm-4">
+    <div style="background-color:#E65F5C;height: 32px"><p class="text-white text-center pt-1">Red</p></div>
+    <div style="background-color:#F5871F;height: 32px"><p class="text-white text-center pt-1">Orange</p></div>
+    <div style="background-color:#ffc107;height: 32px"><p class="text-white text-center pt-1">Yellow</p></div>
+    <div style="background-color:#60AD40;height: 32px"><p class="text-white text-center pt-1">Green</p></div>
+    <div style="background-color:#20c997;height: 32px"><p class="text-white text-center pt-1">Teal</p></div>
+    <div style="background-color:#44A8AF;height: 32px"><p class="text-white text-center pt-1">Cyan</p></div>
+    <div style="background-color:#3988EF;height: 32px"><p class="text-white text-center pt-1">Blue</p></div>
+    <div style="background-color:#6F42C1;height: 32px"><p class="text-white text-center pt-1">Purple</p></div>
+    <div style="background-color:#9D5AC9;height: 32px"><p class="text-white text-center pt-1">Indigo</p></div>
+    <div style="background-color:#e83e8c;height: 32px"><p class="text-white text-center pt-1">Pink</p></div>
+  </div>
+-->
+</div>
+
+<h4>Bootstrap Buttons</h4>
+<p>Bootstrap buttons can be called using the custom Liquid tag <code>btn</code>. In order to give text, a link, and style to the button, each thing must be separated by <code>&nbsp;| </code>, a | in between two spaces.</p>
+<p>The correct syntax from creating a Bootstrap 4 button is: <code>&#123;&#37; btn text | link | style &#37;&#125;</code>. If no values are specified, the button will be rendered with default values, and the button style will be the <code>primary</code> color of the site.</p>
+
+<div class="row mt-5 mb-3">
+  <div class="col-sm-8"><code>&#123;&#37; btn &#37;&#125;</code></div>
+  <div class="col-sm-4">{% btn %}</div>
+</div>
+<div class="row my-3">
+  <div class="col-sm-8"><code>&#123;&#37; btn Click Me &#37;&#125;</code></div>
+  <div class="col-sm-4">{% btn Click Me %}</div>
+</div>
+<div class="row my-3">
+  <div class="col-sm-8"><code>&#123;&#37; btn Google | http://google.com &#37;&#125;</code></div>
+  <div class="col-sm-4">{% btn Google | http://google.com %}</div>
+</div>
+<div class="row my-3">
+  <div class="col-sm-8"><code>&#123;&#37; btn Google | http://google.com | secondary &#37;&#125;</code></div>
+  <div class="col-sm-4">{% btn Google | http://google.com | secondary %}</div>
+</div>
+<div class="row my-3">
+  <div class="col-sm-8"><code>&#123;&#37; btn Google | http://google.com | outline-dark &#37;&#125;</code></div>
+  <div class="col-sm-4">{% btn Google | http://google.com | outline-dark %}</div>
+</div>
+
+<h4>Bootstrap Alerts</h4>
+
+{% alert Please be warned that not using the apropriate values might result in failure. | secondary %}

@@ -1,17 +1,16 @@
-@function dynamic-text-color($color) {
-  @if (lightness($color) > 50) {
-    @return darken($color, 80%);
+@function dynamic-link-color($color) {
+  @if (lightness($color) > 80) {
+    @return darken($color, 100%);
   } @else {
-    @return #ffffff;
+    @return $color;
   }
 }
 
 @function contrast-text-color($color) {
   @if (lightness($color) > 50) {
-    @return darken($color, 90%);
-  }
-  @else {
-    @return darken($color, 33%);
+    @return darken($color, 100%);
+  } @else {
+    @return darken($color, 40%);
   }
 }
 
@@ -20,4 +19,12 @@
   $light: lightness($color);
   $no-light: darken($color, $light);
   @return lighten($no-light, $brightness);
+}
+
+@function dynamic-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return set-lightness($primary, 10);
+  } @else {
+    @return $white;
+  }
 }
